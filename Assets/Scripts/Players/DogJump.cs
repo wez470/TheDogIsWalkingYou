@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour {
+public class DogJump : MonoBehaviour
+{
     private BoxCollider2D boxCollider;
     private Rigidbody2D rigidbody2D;
     private bool grounded = false;
@@ -10,15 +11,17 @@ public class Jump : MonoBehaviour {
     public float jumpForce = 800f;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         boxCollider = GetComponent<BoxCollider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-        if (grounded && Input.GetKeyDown(KeyCode.UpArrow))
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
         }
