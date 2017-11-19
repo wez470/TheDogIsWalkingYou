@@ -12,10 +12,6 @@ public class repeatingBackground : MonoBehaviour {
         groundCollider = GetComponent<BoxCollider2D>();
         groundHorizontalLength = groundCollider.size.x;
     }
-
-    void Start () {
-		
-	}
 	
 	void Update () {
         Vector3 position = transform.position;
