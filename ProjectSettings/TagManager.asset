@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameOverMenu
   - Background
+  - Cactus
+  - Score
   layers:
   - Default
   - TransparentFX
