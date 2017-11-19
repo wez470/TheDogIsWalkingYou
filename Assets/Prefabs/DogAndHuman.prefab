@@ -35,6 +35,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4422385041348124}
   - component: {fileID: 95441289562440518}
+  - component: {fileID: 61215952924078586}
+  - component: {fileID: 114729097032922164}
   m_Layer: 0
   m_Name: HumanTransform
   m_TagString: Untagged
@@ -260,6 +262,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4465855498566542}
   - component: {fileID: 95947957363474646}
+  - component: {fileID: 61780120668931166}
+  - component: {fileID: 114826098763814602}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -650,6 +654,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!61 &61215952924078586
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119941468120430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 4.46}
+  m_EdgeRadius: 0
 --- !u!61 &61562830707496104
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -674,6 +703,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.48, y: 1}
+  m_EdgeRadius: 0
+--- !u!61 &61780120668931166
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816942516592534}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.39, y: -0.7}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.42, y: 8}
   m_EdgeRadius: 0
 --- !u!61 &61976916206765586
 BoxCollider2D:
@@ -734,6 +788,28 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114729097032922164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119941468120430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89731b4bd0f3cf2489666adaabd47c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114826098763814602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816942516592534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581d4e02bc700714791d3bf7d0202b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114857123627921824
 MonoBehaviour:
   m_ObjectHideFlags: 1
