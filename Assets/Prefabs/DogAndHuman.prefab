@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 4525059989426168}
   - component: {fileID: 50083025816711570}
   - component: {fileID: 61976916206765586}
+  - component: {fileID: 114380237772199074}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -788,6 +789,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114380237772199074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1686681924582052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98f45e65e04a7449a971bc0b0eba3f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  jumpForce: 800
 --- !u!114 &114729097032922164
 MonoBehaviour:
   m_ObjectHideFlags: 1
