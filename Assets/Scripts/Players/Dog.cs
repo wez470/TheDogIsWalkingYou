@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dog : MonoBehaviour {
+    public GameController gameController;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,6 +16,6 @@ public class Dog : MonoBehaviour {
 	}
 
     void OnCollisionEnter2D(Collision2D coll) {
-        Debug.Log("HIT");
+        gameController.GameOver();
     }
 }

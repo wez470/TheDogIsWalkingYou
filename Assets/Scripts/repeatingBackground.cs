@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class repeatingBackground : MonoBehaviour {
-
     private BoxCollider2D groundCollider;    
     private float groundHorizontalLength;
+    public GameObject GameOverMenu;
 
     private void Awake()
     {
@@ -14,13 +14,16 @@ public class repeatingBackground : MonoBehaviour {
     }
 	
 	void Update () {
-        Vector3 position = transform.position;
-        position.x -= 0.05f;
-        transform.position = position;
-
-        if (transform.position.x < -groundHorizontalLength)
+        if (!GameOverMenu.active)
         {
-            RepositionBackground();
+            Vector3 position = transform.position;
+            position.x -= 0.05f;
+            transform.position = position;
+
+            if (transform.position.x < -groundHorizontalLength)
+            {
+                RepositionBackground();
+            }
         }
     }
 
