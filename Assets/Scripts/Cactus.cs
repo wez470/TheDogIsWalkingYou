@@ -15,4 +15,8 @@ public class Cactus : MonoBehaviour {
         newPosition.x -= 0.05f;
         transform.position = newPosition;
 	}
+
+    void OnBecameInvisible() {
+        Destroy(this.gameObject);
+    }
 }
