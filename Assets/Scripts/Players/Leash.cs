@@ -21,7 +21,7 @@ public class Leash : MonoBehaviour {
     private void setScale() {
         float yScale = Vector3.Distance(DogHand.transform.position, HumanCollar.position);
         Vector3 scale = transform.localScale;
-        scale.y = yScale;
+        scale.y = yScale / DogHand.parent.localScale.y;
         transform.localScale = scale;
     }
 
