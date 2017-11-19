@@ -6,6 +6,9 @@ public class Dog : MonoBehaviour {
     public GameController gameController;
 
     void OnCollisionEnter2D(Collision2D coll) {
-        gameController.GameOver();
+        if (coll.gameObject.tag != "Background")
+        {
+            gameController.GameOver();
+        }
     }
 }

@@ -28,7 +28,7 @@ public class Jump : MonoBehaviour {
     void FixedUpdate()
     {
 
-       // grounded = boxCollider.IsTouching();
+        grounded = boxCollider.IsTouching(GameObject.FindGameObjectWithTag("Background").GetComponent<BoxCollider2D>());
         if (grounded)
         {
             grounded = true;
